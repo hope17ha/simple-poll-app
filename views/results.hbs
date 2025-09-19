@@ -1,0 +1,11 @@
+<h1>Results for: {{poll.question}}</h1>
+
+<ul>
+  {{#each poll.options}}
+    <li>
+      {{this}} — {{lookup ../poll.votes @index}} votes
+    </li>
+  {{/each}}
+</ul>
+
+<a href="/">⬅️ Back to the main page</a>

@@ -1,0 +1,1 @@
+[{"id":"1","question":"Which is your favorite programming language?","options":["JavaScript","Python","C++","Java"],"votes":[1,2,2,1]},{"id":"2","question":"Which framework you prefer for creating web apps?","options":["React","Angular","Vue","Svelte"],"votes":[0,1,1,0]}]

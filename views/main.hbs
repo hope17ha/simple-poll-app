@@ -1,0 +1,12 @@
+
+<h1>📋 Polls list</h1>
+
+
+<ul>
+  {{#each polls}}
+    <li>
+      
+      <a href="/poll/{{this.id}}">{{this.question}}</a>
+    </li>
+  {{/each}}
+</ul>

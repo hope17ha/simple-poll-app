@@ -1,0 +1,13 @@
+<h1>{{poll.question}}</h1>
+
+<form action="/vote/{{poll.id}}" method="POST">
+  {{#each poll.options}}
+    <div>
+
+      <input type="radio" name="option" value="{{@index}}" required>
+      <label>{{this}}</label>
+    </div>
+  {{/each}}
+
+  <button type="submit">🗳️ Vote</button>
+</form>
