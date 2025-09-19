@@ -1,37 +1,48 @@
-Polling App
-
-A simple Node.js & Express app for creating polls, voting, and viewing results. Uses Handlebars (hbs) for templating and stores poll data in a JSON file.
-
-Features
-
-View all polls on the homepage
-
-Vote on poll options
-
-See poll results with live vote counts
-
-Setup
-
-Clone the repo and install dependencies:
-
-npm install
+# Polling App
 
 
-Ensure you have or downlaod the data/polls.json file with polls
+A simple polling web app built with Node.js, Express, and Handlebars. Users can view polls, vote, and see results.
+
+---
+
+## Features
+
+- ✅ List all polls  
+- ✅ Vote on poll options  
+- ✅ View poll results  
+- ⚠️ No CSS styling included (basic HTML only)
+
+---
+
+## Installation
+
+1. Clone the repo and install dependencies:
+
+   ```bash
+   npm install
+   
+Download the data/polls.json file
 
 Start the server:
 
 node app.js
-
-
-Visit http://localhost:3000
+Open http://localhost:3000 in your browser.
 
 Project Structure
-app.js           # Main app
-data/polls.json  # Poll data
-views/           # Handlebars templates
-package.json     # Dependencies
+
+app.js
+data/
+  └── polls.json
+  
+views/
+  ├── main.hbs
+  
+  ├── poll.hbs
+  
+  └── results.hbs
+package.json
 
 Notes
+Poll data and votes are saved in polls.json.
 
-Votes are saved directly to polls.json
+This project does not include any CSS or styling — UI is plain HTML.
